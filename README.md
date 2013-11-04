@@ -6,7 +6,7 @@ django-simple-formwizard
 Quickstart:
 ========================
 
-Install django-tinymce-filebrowser:
+Install package:
 
     $ pip install django-simple-formwizard
 
