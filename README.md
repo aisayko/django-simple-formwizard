@@ -167,11 +167,6 @@ views.py
     @wizard_check_data(['step2_data1', 'step2_data2'], redirect_to='wizard-step1')    
     def preview(request):
         wizard = Wizard(request, WIZARD_STEPS)
-        data = {
-            'step1_data': wizard.data['step1_data'],
-            'step2_data1': wizard.data['step2_data1'],
-            'step2_data2': wizard.data['step2_data2'],
-        }
         
         if 'confirm' in request.GET:
             my_form = MyForm(wizard.data['post'])
@@ -186,7 +181,7 @@ views.py
                 
                 return redirect('wizard-done')
         
-        return render(request, 'preview.html', {'wizard': wizard, 'data': data})
+        return render(request, 'preview.html', {'wizard': wizard})
 
 step.html
 
