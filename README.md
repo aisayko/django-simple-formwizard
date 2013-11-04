@@ -88,29 +88,35 @@ In templates:
     {% endfor %}
 
 Step properties:
-    passed - indicate that this step is passed
-    is_current - indicate that this step is active
-    name - step name
-    url - url of the step
-    index - step index
+
+- passed - indicate that this step is passed
+- is_current - indicate that this step is active
+- name - step name
+- url - url of the step
+- index - step index
     
 Access prev steps:
-{{ wizard.current_step.prev }}
+
+    {{ wizard.current_step.prev }}
 
 API:
+-----
+
 Wizard object public methods and properties:
 
-*    Properties:
--    request - request object
--    data - saved user data
--    user - user instance
--    current_step - the current step
--    steps - all availible steps
--    id - wizard unique identificator
+Properties:
 
-*    Methods:
--    set_data({'data_key': form}) - set form data with specified key
--    cleanup() - cleanup the session
+- request - request object
+- data - saved user data
+- user - user instance
+- current_step - the current step
+- steps - all availible steps
+- id - wizard unique identificator
+
+Methods:
+
+    - set_data({'data_key': form}) - set form data with specified key
+    - cleanup() - cleanup the session
 
 Example:
 ---------
