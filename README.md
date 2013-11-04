@@ -8,7 +8,7 @@ Quickstart:
 
 Install django-tinymce-filebrowser:
 
-    $ pip install django-tinymce-filebrowser
+    $ pip install django-simple-formwizard
 
 
 In views:
