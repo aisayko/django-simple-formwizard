@@ -156,8 +156,7 @@ views.py
             form2 = MyForm2(request.POST)
             
             if form1.is_valid() and form2.is_valid():
-                wizard.set_data({'step2_data1': form1})
-                wizard.set_data({'step2_data2': form2})
+                wizard.set_data({'step2_data1': form1, 'step2_data2': form2})
                 
                 return redirect(wizard.steps[2]['url'])
         
