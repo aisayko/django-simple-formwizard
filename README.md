@@ -205,3 +205,7 @@ step.html
             <button type="submit">Next &raquo;</button>
         </div>
     </form>
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/aisayko/django-simple-formwizard/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
